@@ -5,12 +5,14 @@
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px 0;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Darker chat container */
       .darker {
 	border-color: #ccc;
 	background-color: #ddd;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Clear floats */
@@ -18,6 +20,7 @@
 	content: "";
 	clear: both;
 	display: table;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Style images */
@@ -27,6 +30,7 @@
 	width: 100%;
 	margin-right: 20px;
 	border-radius: 50%;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Style the right image */
@@ -34,16 +38,19 @@
 	float: right;
 	margin-left: 20px;
 	margin-right:0;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Style time text */
       .time-right {
 	float: right;
 	color: #aaa;
+	font-family: 'Lato', sans-serif;
       }
       
       /* Style time text */
       .time-left {
 	float: left;
 	color: #999;
+	font-family: 'Lato', sans-serif;
       }
