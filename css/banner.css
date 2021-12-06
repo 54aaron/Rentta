@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+input{
+    border-style: solid;
+    border-color: #A4BADE;
+    border-radius: 50px;
+    border-width: 4px;
+    padding: 10px;
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    color: #A4BADE;
+    background-color: #00286B;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #00286B;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.icons {
+    list-style: none;
+}
+
+.icons li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+#profile-img{
+    border-style: solid;
+    border-color: #A4BADE;
+    border-radius: 50px;
+    border-width: 3px;
+    padding: 5px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    margin-top: 2px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #A4BADE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown a{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #00286B;
+}
+
+.message-drop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seeall{
+    font-size: 12px;
+    margin: auto;
+}
+
+#notifs:hover .dropdown {
+    display: block;
+}
+
+#messages:hover .dropdown {
+    display: block;
+}
+
+.dropdown a:hover{
+    background-color: rgba(0, 40, 107, 0.3);
+}
+
+.subheader{
+    display: flex;
+    justify-content: center;
+    background-color: #A4BADE;
+    overflow: hidden;
+    padding: 20px 0px;
+    filter: drop-shadow(0px 5px 4px rgba(0, 50, 138, 0.3));
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.links li:hover {
+    text-decoration: underline;;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #00286B;
+    font-family: "Lato", sans-serif;
+}
+
+#logout {
+    text-decoration: none;
+    color: #ff004c;
+    font-family: "Lato", sans-serif;
+}

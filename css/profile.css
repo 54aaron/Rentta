@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+.profile{
+    display: flex;
+}
+.profile-links{
+    list-style: none;
+    margin: 50px;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    /* border-style: solid; */
+}
+
+.profile-links a{
+    text-decoration: none;
+    color: #00286B;
+    margin-top: 20px;
+}
+
+.profile-links a:hover{
+    text-decoration: underline;
+}
+
+.profile-info{
+    /* border-style: solid; */
+    margin: 50px;
+}
+
+.personal-info{
+    display: flex;
+    /* border-style: solid; */
+    margin: 50px;
+}
+
+#profile-page-img{
+    border-style: solid;
+    border-color: #A4BADE;
+    background-color: white;
+    filter: drop-shadow(3px 3px 3px #c4c4c4);
+    border-radius: 150px;
+    border-width: 5px;
+    padding: 20px;
+}
+
+.profile-names{
+    margin: 20px;
+    margin-top: 125px;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+#profile-page-img-sub{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.reviews {
+    display: block;
+    /* border-style: solid; */
+    margin: 50px;
+}
+
+.reviews p{
+    font-weight: 600;
+    font-size: 36px;
+}
+.review-list{
+    margin-top: 50px;
+}
+
+.review-list div *{
+    display: block;
+    /* border-style: solid; */
+    margin: 30px 10px 30px 0px;
+}
+
+.review-list div a{
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 24px;
+    color: #00286B;
+}
+
+.review-list div p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#readmore{
+    margin-top: 2px;
+    font-size: 18px;
+}
