@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/banner.css">
-  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/reviews.css">
 </head>
 
 <header>
@@ -99,46 +99,58 @@
 </div>
 
 <body>
-    <div class="profile">
-        <ul class = "profile-links">
-            <li>
-                <a href="#">My Filters</a>
-            </li>
-            <li>
-                <a href="#">Saved Apartments</a>
-            </li>
-            <li>
-                <a href="#">Applications</a>
-            </li>
-            <li>
-                <a href="#">Messages</a>
-            </li>
-            <li>
-                <a href="#">Documents</a>
-            </li>
-            <li>
-                <a href="#">Support</a>
-            </li>
-            <li>
-                <a href="#">Settings</a>
-            </li>
-            <li>
-                <a id="logout" href="#">Log Out</a>
-            </li>
-        </ul>
-        <div class="profile-info">
-            <div class="personal-info">
-                <img id="profile-page-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=250px height=250px>
-                <div class="profile-names">
-                    <p>Mr. Yarn Yoshi</p>
-                    <p id="profile-page-img-sub">Tenant</p> 
+    <div class="testimonials">
+        <div class="testimonial-filters">
+            <div class="sort-by">
+                <p>Sort by</p>
+                <div class="sort-options">
+                  <input type="radio" id="relevance" name="sort option">
+                  <label for="relevance">Relevance</label><br>
+                  <input type="radio" id="most helpful" name="sort option">
+                  <label for="most helpful">Most Helpful</label><br>
+                  <input type="radio" id="latest" name="sort option">
+                  <label for="latest">Latest</label>
                 </div>
             </div>
-            <div class="reviews">
-                <p>My Reviews</p>
+            <div class="testimonial-filters-filters">
+                <p>Filters</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" label="1 star"><label for="1 star"> 1 star </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" label="2 star"><label for="2 star"> 2 star </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" label="3 star"><label for="3 star"> 3 star </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" label="4 star"><label for="4 star"> 4 star </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" label="5 star"><label for="5 star"> 5 star </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" label="wimages"><label for="wimages"> With Images </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="reviews-info">
+            <p>Tenant Testimonials</p>
+            <div class="listing-info">
+                <a href="#">346 E 120th St, New York, NY 10035</a>
+                <img id="apartment-img" src="../img/apartment.png" alt="A nice loveable yarn yoshi - a friend" width=197px height=145px>
+            </div>
+            <div class="reviews-list-box">
+                <p id="reviews-list-box-title">Reviews</p>
                 <div class="review-list">
-                    <div>
-                        <a href="#">346 E 120th St, New York, NY 10035</a>
+                    <div class="review">
+                        <div>
+                            <img id="profile-page-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=40px height=40px>
+                            <a href="#">AIleen Cano</a>
+                            <a href="#" id="Date">11/25/2021</a>
+                        </div> 
                         <svg width="151" height="19" viewBox="0 0 151 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="141.5" cy="9.5" r="9" transform="rotate(-180 141.5 9.5)" stroke="#00286B"/>
                             <circle cx="108.5" cy="9.5" r="9" transform="rotate(-180 108.5 9.5)" stroke="#00286B"/>
@@ -146,13 +158,29 @@
                             <circle cx="42.5" cy="9.5" r="9" transform="rotate(-180 42.5 9.5)" stroke="#00286B"/>
                             <circle cx="9.5" cy="9.5" r="9.5" transform="rotate(-180 9.5 9.5)" fill="#00286B"/>
                         </svg>
-                        <p>Hated it! Absolute Dump!!!</p>
+                        <div class="review-text">
+                            <p id="review-title">Great View - Weird Smell</p>
+                            <p>The whole place stunk of mold. Landlord needs to be investigated.</p>
+                        </div>
+                        <div class="review-images">
+                            <img id="profile-page-img" src="../img/apartment.png" alt="A nice loveable yarn yoshi - a friend" width=54px height=40px>
+                            <img id="profile-page-img" src="../img/apartment.png" alt="A nice loveable yarn yoshi - a friend" width=54px height=40px>
+                            <img id="profile-page-img" src="../img/moreimages.png" alt="A nice loveable yarn yoshi - a friend" width=54px height=40px>
+                        </div>
+                        <div class="helpful">
+                            <p>23 found this helpful</p>
+                            <button>Helpful</button>
+                        </div>
                     </div>
                     <svg width="419" height="1" viewBox="0 0 419 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="0.5" x2="419" y2="0.5" stroke="#A4BADE"/>
                     </svg>
-                    <div>
-                        <a href="#">1779 Madison Ave #404, New York, NY ...</a>
+                    <div class="review">
+                        <div>
+                            <img id="profile-page-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=40px height=40px>
+                            <a href="#">Sebastian Hereu</a>
+                            <a href="#" id="Date">11/25/2021</a>
+                        </div> 
                         <svg width="151" height="19" viewBox="0 0 151 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="141.5" cy="9.5" r="9.5" transform="rotate(-180 141.5 9.5)" fill="#00286B"/>
                             <circle cx="108.5" cy="9.5" r="9.5" transform="rotate(-180 108.5 9.5)" fill="#00286B"/>
@@ -160,7 +188,14 @@
                             <circle cx="42.5" cy="9.5" r="9.5" transform="rotate(-180 42.5 9.5)" fill="#00286B"/>
                             <circle cx="9.5" cy="9.5" r="9.5" transform="rotate(-180 9.5 9.5)" fill="#00286B"/>
                         </svg>
-                        <p>Loved it!!!! Eleanor is the best landorld. She ... <a id="readmore" href="#">read more</a></p>
+                        <div class="review-text">
+                            <p id="review-title">Great Place!</p>
+                            <p>Great price, great building, great landlord - even great neighbors! No complaints!</p>
+                        </div>
+                        <div class="helpful">
+                            <p>14 found this helpful</p>
+                            <button>Helpful</button>
+                        </div>
                     </div>
                 </div>
             </div>
