@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+.saved{
+    display: flex;
+}
+
+.saved-filters{
+    list-style: none;
+    margin: 50px;
+    width: 200px;
+}
+
+.saved-filters ul{
+    list-style: none;
+}
+
+.sort-by{
+    font-weight: 500;
+    font-size: 24px;
+    color: #00286B;
+    margin-bottom: 20px;
+}
+
+.sort-by .sort-options{
+    font-weight: 500;
+    font-size: 18px;
+    color: #00286B;
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    margin-right: -30px;
+    margin-top: 30px;
+}
+
+.saved-list{
+    /* border-style: solid; */
+    margin: 50px;
+}
+
+#saved-list-box-title{
+    font-weight: 500;
+    font-size: 24px;
+    color: #00286B;
+}
+
+.saved-box{
+    width: 900px;
+    margin-top: 30px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.saved-box img{
+    width: 160px;
+    height: 117px;
+    border-radius: 12px;
+}
+.saved-box-text{
+    margin-left: 20px;
+}
+.saved-box-text p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #141414;
+    margin-bottom:10px;
+}
+
+#price{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.amenities{
+    display: flex;
+}
+
+.amenities p{
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.actions{
+    display: flex;
+    margin-top: 5px;
+}
+
+.actions p{
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #00286B;
+}
+
+.actions a{
+    display: flex;
+    text-decoration: none;
+}
+
+.actions a svg{
+    margin-top:3px;
+    margin-right: 5px;
+}
+
+#remove{
+    margin-left: 400px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #00286B;
+}
