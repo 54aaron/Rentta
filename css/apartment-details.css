@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+.container{
+    display: block;
+}
+
+/* .col1, .col2{
+    margin: 50px;
+} */
+
+.row1, .row2{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.row2{
+    margin-top: -30px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #00286B;
+}
+
+.geninfo{
+    margin-bottom: 40px;
+}
+
+.geninfo p{
+    font-weight: 600;
+    font-size: 36px;
+    color: #00286B;
+    margin-bottom: 20px;
+}
+
+.overview{
+    margin-bottom: 40px;
+}
+
+.overview .title{
+    margin-bottom: 10px;
+}
+
+.overview .text{
+    font-weight: 300;
+    width: 700px;
+    line-height: 150%;
+}
+
+.location iframe{
+    margin-top: 20px;
+}
+
+.apply{
+    float: left;
+    border-style: solid;
+    padding: 40px;
+    /* width: 500px; */
+    padding-bottom: 0px;
+    /* padding-top: 50px; */
+    margin-bottom: 60px;
+    border-color: #00286B;
+    border-radius: 10px;
+    margin-right: 100px;
+    background-color: white;
+    filter: drop-shadow(10px 10px 2px rgb(212, 212, 212));
+}
+
+.apply p{
+    font-size: 14px;
+    font-weight: normal;
+    color: #00286B;
+}
+
+.apply #name{
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+.apply #list-heading{
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin-bottom: 5px;
+}
+
+.apply ul{
+    margin-left: 20px;
+}
+
+.apply li{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.apply li svg{
+    margin-left: 10px;
+}
+
+.apply li p{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.apply #call{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.apply .buttons{
+    margin-bottom: 0px;
+}
+
+.apply .buttons #apply{
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00286B;
+    color: white;
+    padding: 0px;
+    margin-right: 20px;
+}
+.apply .buttons{
+    margin-top: 20px;
+}
+.apply .buttons #message{
+    font-weight: 500;
+    font-size: 14px;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    color: #00286B;
+    border-color: #00286B;
+    background-color: white;
+}
+
+.apply .buttons #message:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.apply .buttons #apply:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.col2{
+    margin-right: 200px;
+}
+
+.col2 li{
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 20px;
+    list-style: none;
+}
+.amenities{
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.resources{
+    text-align: right;
+    margin-bottom: 50px;
+}
