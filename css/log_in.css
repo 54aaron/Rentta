@@ -39,7 +39,7 @@
   margin-top:0px;
   margin-bottom:883px;
   min-height:141px;
-  content:url(Navigation_Top.png);
+  content:url(../img/Navigation_Top.png);
 }
 .Navigation-Top-outer{
   pointer-events:none;
@@ -215,7 +215,7 @@
   width:83.31818181818197%;
   height:75%;
   margin-top:9.090909090909108%;
-  content:url(Vector_2.png);
+  content:url(../img/Vector_2.png);
 }
 .Vector-2-outer{
   pointer-events:none;
@@ -235,7 +235,7 @@
   width:100%;
   height:100%;
   margin-top:0%;
-  content:url(Vector_3.png);
+  content:url(../img/Vector_3.png);
 }
 .Vector-3-outer{
   pointer-events:none;
@@ -391,7 +391,7 @@
   width:100%;
   height:100%;
   margin-top:0%;
-  content:url(Vector.png);
+  content:url(../img/Vector.png);
 }
 .Vector-outer{
   pointer-events:none;
@@ -448,7 +448,7 @@
   width:100%;
   height:100%;
   margin-top:-6.0606060606060606%;
-  content:url(Vector_1.png);
+  content:url(../img/Vector_1.png);
 }
 .Vector-1-outer{
   pointer-events:none;
