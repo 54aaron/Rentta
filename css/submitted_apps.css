@@ -1,0 +1,50 @@
+.listing-info a{
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    color: #00286B;
+    margin-top: 5px;
+}
+
+.listing-info img{
+    margin: 10px 0px 10px 0;
+}
+
+#title{
+    position:absolute; 
+    left:200px;
+    color: #00286B;
+    top: 175px;
+    font-size: 40px;
+  }
+
+  .bottom_of_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #top_listing{
+    position: absolute;
+    left: 200px;
+    top: 235px;
+  }
+
+  #bottom_listing{
+    position: absolute;
+    left: 200px;
+    top: 435px;
+  }
+
+  #submission_date{
+    position: absolute;
+    left: 200px;
+    top: 235px;
+    font-size: 20px;
+  }
+  #status{
+    position: absolute;
+    left: 200px;
+    top: 285px;
+    font-size: 20px;
+  }
