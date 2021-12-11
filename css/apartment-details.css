@@ -162,6 +162,50 @@
     margin-top: 20px;
     list-style: none;
 }
+
+.reviews{
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.reviews .review_circle{
+    border-style: solid;
+    border-radius: 100px;
+    margin-right: 0px;
+    margin-left: 200px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    border-color: #00286B;
+}
+
+.circle_content{
+    text-align: left;
+    color: #00286B;
+}
+
+.reviews .title{
+    font-size: 36px;
+}
+
+.reviews #ratings, .reviews a{
+    color: #00286B;
+    font-size: 12px;
+}
+
+.reviews a{
+    text-decoration-line: none;
+    text-decoration-line: underline;
+    color: #00286B;
+    font-size: 14px;
+}
+
+.reviews ul{
+    display: block;
+}
+
 .amenities{
     text-align: right;
     margin-bottom: 50px;
