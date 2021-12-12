@@ -50,6 +50,7 @@
     position:absolute; 
     left:200px;
     top: 245px; 
+    
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,400;1,300&display=swap');
@@ -226,18 +227,26 @@
   .switch-toggle {
     float: left;
     background: white;
-    
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    border-width: 2px;
  }
+
  .switch-toggle input {
    position: absolute;
    opacity: 0;
  }
+
  .switch-toggle input + label {
    padding: 7px;
    float:left;
    color:black;
-   cursor: pointer;
+   cursor: pointer; 
+
  }
+
  .switch-toggle input:checked + label {
    background: #35a1e9;
+   
  }
+
