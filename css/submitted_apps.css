@@ -8,6 +8,8 @@
   .saved-list{
       /* border-style: solid; */
       margin: 50px;
+      position: absolute;
+      left: 200px;
   }
   
   #saved-list-box-title{
@@ -44,8 +46,12 @@
   
   #price{
       font-weight: 600;
-      font-size: 20px;
+      font-size: 16px;
   }
+  #status{
+    font-weight: 600;
+    font-size: 20px;
+}
   
   
   .actions{
@@ -75,6 +81,7 @@
       font-weight: normal;
       font-size: 14px;
       color: #00286B;
+      right: 0;
   }
 
   #contact_owner{
