@@ -54,7 +54,7 @@
   }
   
   .actions p{
-      margin-right: 20px;
+      margin-right:20px;
       font-weight: normal;
       font-size: 14px;
       color: #00286B;
@@ -75,4 +75,10 @@
       font-weight: normal;
       font-size: 14px;
       color: #00286B;
+  }
+
+  #contact_owner{
+      position: inherit;
+      right: 0;
+
   }
