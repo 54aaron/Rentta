@@ -36,6 +36,7 @@
   }
   .saved-box-text{
       margin-left: 20px;
+      width: 800px;
   }
   .saved-box-text p{
       font-weight: 600;
@@ -81,11 +82,11 @@
       font-weight: normal;
       font-size: 14px;
       color: #00286B;
-      right: 0;
   }
 
   #contact_owner{
-      position: inherit;
+      
       right: 0;
-
+      top: 0;
   }
+
