@@ -261,3 +261,9 @@
   top: 295px;
   font-size: 20px;
  }
+
+ #contact_owner{
+   position: absolute;
+   top: 0;
+   right: 0;
+ }
