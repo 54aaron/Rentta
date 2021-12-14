@@ -63,7 +63,7 @@
   text-align:center;
   color:rgba(0, 0, 0, 1);
   font-style:normal;
-  font-family:;
+  /* font-family:; */
   font-weight:400;
   font-size:40px;
   line-height:187.5%;
@@ -124,8 +124,9 @@
 }
 .Button{
   position:relative;
+  cursor: pointer;
   z-index:5;
-  pointer-events:none;
+  /* pointer-events:none; */
   margin-left:572px;
   width:296px;
   min-width:296px;
@@ -138,7 +139,8 @@
   overflow:hidden;
 }
 .Button-outer{
-  pointer-events:none;
+  /* pointer-events:none; */
+  cursor: pointer;
   z-index:5;
   position:relative;
   display:flex;

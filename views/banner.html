@@ -1,5 +1,9 @@
 <head>
     <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/banner.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../js/functions.js"></script>
 </head>
 
 <header>
@@ -10,7 +14,8 @@
             <path d="M318.867 61.5L350 16.7545L381.133 61.5H318.867Z" stroke="#A4BADE" stroke-width="10"/>
         </svg>
     </a>
-    <input type="text" placeholder="Search..">
+    <input type="text" placeholder="Enter a Neighborhood or Zipcode">
+    <a href="search.html"><input id="go" type="button" value="Search"></a>
     <nav>
         <ul class = "icons">
         <li id="messages">
@@ -24,17 +29,17 @@
             <div class="dropdown">
                 <div class="message-drop">
                     <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-                    <a href="#">New Message from Deonte!</a>
+                    <a href="message.html">New Message from Deonte!</a>
                 </div>
                 <div class="message-drop">
                     <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-                    <a href="#">New Message from Caresha!</a>
+                    <a href="message.html">New Message from Caresha!</a>
                 </div>
                 <div class="message-drop">
                     <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-                    <a href="#">New Message from Latoya!</a>
+                    <a href="message.html">New Message from Latoya!</a>
                 </div>
-                <a id="seeall" href="#">See all messages</a>
+                <a id="seeall" href="message.html">See all messages</a>
             </div>
         </li>
          <li id="notifs">
@@ -51,10 +56,8 @@
                  </svg> 
             </a>
             <div class="dropdown">
-                <a href="#">Update on your application!</a>
-                <a href="#">Update on an apartment you saved!</a>
-                <a href="#">Some other notification!</a>
-                <a id="seeall" href="#">See all notifications</a>
+                <a href="submitted_apps.html">Update on your application!</a>
+                <a href="saved.html">Update on an apartment you saved!</a>
             </div>
         </li>
             <li><a href="../views/profile.html">

@@ -15,86 +15,85 @@
     <title> Apartments | Affordable & Clean Living for All</title>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  	<script src="../js/search.js"></script>
+  	<script src="../js/functions.js"></script>
   </head>
 
-<header>
-	<a class="logo" href="#">
-	    <svg width="150" height="54" viewBox="0 0 397 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M28.704 72.616C31.136 72.616 33.248 72.312 35.04 71.704C36.864 71.096 38.352 70.264 39.504 69.208C40.688 68.12 41.568 66.84 42.144 65.368C42.72 63.896 43.008 62.28 43.008 60.52C43.008 57 41.84 54.296 39.504 52.408C37.2 50.52 33.664 49.576 28.896 49.576H20.64V72.616H28.704ZM61.92 109H50.256C48.048 109 46.448 108.136 45.456 106.408L30.864 84.184C30.32 83.352 29.712 82.76 29.04 82.408C28.4 82.056 27.44 81.88 26.16 81.88H20.64V109H7.728V39.592H28.896C33.6 39.592 37.632 40.088 40.992 41.08C44.384 42.04 47.152 43.4 49.296 45.16C51.472 46.92 53.072 49.032 54.096 51.496C55.12 53.928 55.632 56.616 55.632 59.56C55.632 61.896 55.28 64.104 54.576 66.184C53.904 68.264 52.912 70.152 51.6 71.848C50.32 73.544 48.72 75.032 46.8 76.312C44.912 77.592 42.752 78.6 40.32 79.336C41.152 79.816 41.92 80.392 42.624 81.064C43.328 81.704 43.968 82.472 44.544 83.368L61.92 109ZM82.3755 49.864V69.112H106.664V79.048H82.3755V98.68H113.192V109H69.4155V39.592H113.192V49.864H82.3755ZM183.146 39.592V109H176.522C175.498 109 174.634 108.84 173.93 108.52C173.258 108.168 172.602 107.592 171.962 106.792L135.722 60.52C135.914 62.632 136.01 64.584 136.01 66.376V109H124.634V39.592H131.402C131.946 39.592 132.41 39.624 132.794 39.688C133.21 39.72 133.562 39.816 133.85 39.976C134.17 40.104 134.474 40.312 134.762 40.6C135.05 40.856 135.37 41.208 135.722 41.656L172.106 88.12C172.01 87 171.93 85.896 171.866 84.808C171.802 83.72 171.77 82.712 171.77 81.784V39.592H183.146ZM247.083 50.2H226.155V109H213.243V50.2H192.315V39.592H247.083V50.2ZM304.646 50.2H283.718V109H270.806V50.2H249.878V39.592H304.646V50.2Z" fill="#A4BADE"/>
-		<rect x="324.5" y="61.5" width="51" height="43" stroke="#A4BADE" stroke-width="9"/>
-		<path d="M318.867 61.5L350 16.7545L381.133 61.5H318.867Z" stroke="#A4BADE" stroke-width="10"/>
-	    </svg>
-	</a>
-	<input type="text" placeholder="Search...">
-	<nav>
-	    <ul class = "icons">
-	    <li id="messages">
-		<a href="#">
-		    <svg width="45" height="45" viewBox="0 0 68 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<rect x="2.5" y="2.5" width="63" height="48" rx="12.5" stroke="#A4BADE" stroke-width="5"/>
-			<line x1="2.5" y1="-2.5" x2="32.1592" y2="-2.5" transform="matrix(0.828021 0.560698 -0.360561 0.932736 6.80029 14.05)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
-			<line x1="2.5" y1="-2.5" x2="32.6354" y2="-2.5" transform="matrix(-0.794575 0.607166 -0.399834 -0.916588 60.4448 8)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
-		    </svg>
-		</a>
-		<div class="dropdown">
-		    <div class="message-drop">
-			<img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-			<a href="#">New Message from Deonte!</a>
-		    </div>
-		    <div class="message-drop">
-			<img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-			<a href="#">New Message from Caresha!</a>
-		    </div>
-		    <div class="message-drop">
-			<img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-			<a href="#">New Message from Latoya!</a>
-		    </div>
-		    <a id="seeall" href="#">See all messages</a>
-		</div>
-	    </li>
-	     <li id="notifs">
-		<a href="#">
-		    <svg width="43" height="43" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g clip-path="url(#clip0_34_331)">
-			<path d="M10.8942 39.3196H41.3974V24.1356C41.3974 15.6753 34.569 8.81646 26.1458 8.81646C17.7226 8.81646 10.8942 15.6753 10.8942 24.1356V39.3196ZM26.1458 4.45886C36.9744 4.45886 45.755 13.2677 45.755 24.1356V43.6772H6.53662V24.1356C6.53662 13.2677 15.3172 4.45886 26.1458 4.45886ZM20.6988 45.856H31.5928C31.5928 47.3006 31.0189 48.6861 29.9974 49.7076C28.9759 50.7291 27.5904 51.303 26.1458 51.303C24.7012 51.303 23.3157 50.7291 22.2942 49.7076C21.2727 48.6861 20.6988 47.3006 20.6988 45.856Z" fill="#A4BADE"/>
-			</g>
-			<defs>
-			<clipPath id="clip0_34_331">
-			<rect width="52.2911" height="52.2911" fill="white" transform="translate(0 0.101257)"/>
-			</clipPath>
-			</defs>
-		     </svg> 
-		</a>
-		<div class="dropdown">
-		    <a href="#">Update on your application!</a>
-		    <a href="#">Update on an apartment you saved!</a>
-		    <a href="#">Some other notification!</a>
-		    <a id="seeall" href="#">See all notifications</a>
-		</div>
-	    </li>
-		<li><a href="#">
-		    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
-		</a></li>
-	    </ul>
-	</nav>
+  <header>
+    <a class="logo" href="#">
+        <svg width="150" height="54" viewBox="0 0 397 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.704 72.616C31.136 72.616 33.248 72.312 35.04 71.704C36.864 71.096 38.352 70.264 39.504 69.208C40.688 68.12 41.568 66.84 42.144 65.368C42.72 63.896 43.008 62.28 43.008 60.52C43.008 57 41.84 54.296 39.504 52.408C37.2 50.52 33.664 49.576 28.896 49.576H20.64V72.616H28.704ZM61.92 109H50.256C48.048 109 46.448 108.136 45.456 106.408L30.864 84.184C30.32 83.352 29.712 82.76 29.04 82.408C28.4 82.056 27.44 81.88 26.16 81.88H20.64V109H7.728V39.592H28.896C33.6 39.592 37.632 40.088 40.992 41.08C44.384 42.04 47.152 43.4 49.296 45.16C51.472 46.92 53.072 49.032 54.096 51.496C55.12 53.928 55.632 56.616 55.632 59.56C55.632 61.896 55.28 64.104 54.576 66.184C53.904 68.264 52.912 70.152 51.6 71.848C50.32 73.544 48.72 75.032 46.8 76.312C44.912 77.592 42.752 78.6 40.32 79.336C41.152 79.816 41.92 80.392 42.624 81.064C43.328 81.704 43.968 82.472 44.544 83.368L61.92 109ZM82.3755 49.864V69.112H106.664V79.048H82.3755V98.68H113.192V109H69.4155V39.592H113.192V49.864H82.3755ZM183.146 39.592V109H176.522C175.498 109 174.634 108.84 173.93 108.52C173.258 108.168 172.602 107.592 171.962 106.792L135.722 60.52C135.914 62.632 136.01 64.584 136.01 66.376V109H124.634V39.592H131.402C131.946 39.592 132.41 39.624 132.794 39.688C133.21 39.72 133.562 39.816 133.85 39.976C134.17 40.104 134.474 40.312 134.762 40.6C135.05 40.856 135.37 41.208 135.722 41.656L172.106 88.12C172.01 87 171.93 85.896 171.866 84.808C171.802 83.72 171.77 82.712 171.77 81.784V39.592H183.146ZM247.083 50.2H226.155V109H213.243V50.2H192.315V39.592H247.083V50.2ZM304.646 50.2H283.718V109H270.806V50.2H249.878V39.592H304.646V50.2Z" fill="#A4BADE"/>
+            <rect x="324.5" y="61.5" width="51" height="43" stroke="#A4BADE" stroke-width="9"/>
+            <path d="M318.867 61.5L350 16.7545L381.133 61.5H318.867Z" stroke="#A4BADE" stroke-width="10"/>
+        </svg>
+    </a>
+    <input type="text" placeholder="Enter a Neighborhood or Zipcode">
+    <a href="search.html"><input id="go" type="button" value="Search"></a>
+    <nav>
+        <ul class = "icons">
+        <li id="messages">
+            <a href="../views/message.html">
+                <svg width="45" height="45" viewBox="0 0 68 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.5" y="2.5" width="63" height="48" rx="12.5" stroke="#A4BADE" stroke-width="5"/>
+                    <line x1="2.5" y1="-2.5" x2="32.1592" y2="-2.5" transform="matrix(0.828021 0.560698 -0.360561 0.932736 6.80029 14.05)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
+                    <line x1="2.5" y1="-2.5" x2="32.6354" y2="-2.5" transform="matrix(-0.794575 0.607166 -0.399834 -0.916588 60.4448 8)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <div class="dropdown">
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Deonte!</a>
+                </div>
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Caresha!</a>
+                </div>
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Latoya!</a>
+                </div>
+                <a id="seeall" href="message.html">See all messages</a>
+            </div>
+        </li>
+         <li id="notifs">
+            <a href="#">
+                <svg width="43" height="43" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_34_331)">
+                    <path d="M10.8942 39.3196H41.3974V24.1356C41.3974 15.6753 34.569 8.81646 26.1458 8.81646C17.7226 8.81646 10.8942 15.6753 10.8942 24.1356V39.3196ZM26.1458 4.45886C36.9744 4.45886 45.755 13.2677 45.755 24.1356V43.6772H6.53662V24.1356C6.53662 13.2677 15.3172 4.45886 26.1458 4.45886ZM20.6988 45.856H31.5928C31.5928 47.3006 31.0189 48.6861 29.9974 49.7076C28.9759 50.7291 27.5904 51.303 26.1458 51.303C24.7012 51.303 23.3157 50.7291 22.2942 49.7076C21.2727 48.6861 20.6988 47.3006 20.6988 45.856Z" fill="#A4BADE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_34_331">
+                    <rect width="52.2911" height="52.2911" fill="white" transform="translate(0 0.101257)"/>
+                    </clipPath>
+                    </defs>
+                 </svg> 
+            </a>
+            <div class="dropdown">
+                <a href="submitted_apps.html">Update on your application!</a>
+                <a href="saved.html">Update on an apartment you saved!</a>
+            </div>
+        </li>
+            <li><a href="../views/profile.html">
+                <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+            </a></li>
+        </ul>
+    </nav>
 </header>
 <div class = "subheader">
     <ul class = "links">
         <li>
-            <a href="#">My Filters</a>
+            <a href="../views/filters.html">My Filters</a>
         </li>
         <li>
-            <a href="#">Saved Apartments</a>
+            <a href="../views/saved.html">Saved Apartments</a>
         </li>
         <li>
-            <a href="#">Applications</a>
+            <a href="../views/submitted_apps.html">Applications</a>
         </li>
         <li>
-            <a href="#">Messages</a>
+            <a href="../views/message.html">Messages</a>
         </li>
         <li>
-            <a href="#">Documents</a>
+            <a href="../views/upload.html">Documents</a>
         </li>
         <li>
             <a href="#">Support</a>
@@ -103,10 +102,10 @@
             <a href="#">Settings</a>
         </li>
         <li>
-            <a id="logout" href="#">Log Out</a>
+            <a id="logout" href="../views/landing.html">Log Out</a>
         </li>
     </ul>
-</div>
+</div> 
 <!-- <header class="header">
 <nav class="nav nav--tours">
 <a href="#" class="nav__el">All Listings</a>
@@ -147,7 +146,7 @@
 				<p>Saved Filters</p>
 				<label class="switch">
 					<input type="checkbox">
-					<span class="slider round" onClick="change_back()"></span>
+					<span class="slider round" onClick="search()"></span>
 				</label>
 			</div>
 			<div class="filters-filters">
@@ -658,21 +657,5 @@
 								</div>
 								  </div>
     </main>
-
-    <div class="footer">
-      <div class="footer__logo">
-        <img src="img/logo-green.png" alt="Natours logo" />
-      </div>
-      <ul class="footer__nav">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Download apps</a></li>
-        <li><a href="#">Become a guide</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <p class="footer__copyright">
-        &copy; by Jonas Schmedtmann. All rights reserved.
-      </p>
-    </div>
   </body>
 </html>

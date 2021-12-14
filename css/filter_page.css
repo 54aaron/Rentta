@@ -4,10 +4,16 @@
     width: 330px;
     height: 50px;
     color: white;
+    cursor: pointer;
     position: absolute;  
     top:650px;
     font-size: 17px;
   } 
+
+#set_filters:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
 
    .bottom_of_page {
     display: flex;
