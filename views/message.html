@@ -1,60 +1,160 @@
-<header class="header">
-	<nav class="nav nav--tours">
-	  <a href="#" class="nav__el">All Listings</a>
-	  <form class="nav__search">
-	    <button class="nav__search-btn">
-	      <svg>
-		<use xlink:href="img/icons.svg#icon-search"></use>
-	      </svg>
-	    </button>
-	    <input
-	      type="text"
-	      placeholder="Filter Listings"
-	      class="nav__search-input"
-	    />
-	  </form>
-	</nav>
-	<div class="header__logo">
-	  <img src="../img/logo.jpeg" alt="logo" />
-	</div>
-	<nav class="nav nav--user">
-	  <a href="#" class="nav__el">Messages</a>
-	  <a href="#" class="nav__el">
-	    <img src="img/user.jpeg" alt="User photo" class="nav__user-img" />
-	    <span>Jimi Hendrix</span>
-	  </a>
-  
-	  <!-- <button class="nav__el">Log in</button>
-	  <button class="nav__el nav__el--cta">Sign up</button> -->
-	</nav>
+<head>
+	<link rel="stylesheet" href="../css/banner.css">
+</head>
+
+<header>
+    <a class="logo" href="home.html">
+        <svg width="150" height="54" viewBox="0 0 397 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.704 72.616C31.136 72.616 33.248 72.312 35.04 71.704C36.864 71.096 38.352 70.264 39.504 69.208C40.688 68.12 41.568 66.84 42.144 65.368C42.72 63.896 43.008 62.28 43.008 60.52C43.008 57 41.84 54.296 39.504 52.408C37.2 50.52 33.664 49.576 28.896 49.576H20.64V72.616H28.704ZM61.92 109H50.256C48.048 109 46.448 108.136 45.456 106.408L30.864 84.184C30.32 83.352 29.712 82.76 29.04 82.408C28.4 82.056 27.44 81.88 26.16 81.88H20.64V109H7.728V39.592H28.896C33.6 39.592 37.632 40.088 40.992 41.08C44.384 42.04 47.152 43.4 49.296 45.16C51.472 46.92 53.072 49.032 54.096 51.496C55.12 53.928 55.632 56.616 55.632 59.56C55.632 61.896 55.28 64.104 54.576 66.184C53.904 68.264 52.912 70.152 51.6 71.848C50.32 73.544 48.72 75.032 46.8 76.312C44.912 77.592 42.752 78.6 40.32 79.336C41.152 79.816 41.92 80.392 42.624 81.064C43.328 81.704 43.968 82.472 44.544 83.368L61.92 109Z" fill="#6A88CD"/>
+            <path d="M82.3755 49.864V69.112H106.664V79.048H82.3755V98.68H113.192V109H69.4155V39.592H113.192V49.864H82.3755Z" fill="#7A98D3"/>
+            <path d="M183.146 39.592V109H176.522C175.498 109 174.634 108.84 173.93 108.52C173.258 108.168 172.602 107.592 171.962 106.792L135.722 60.52C135.914 62.632 136.01 64.584 136.01 66.376V109H124.634V39.592H131.402C131.946 39.592 132.41 39.624 132.794 39.688C133.21 39.72 133.562 39.816 133.85 39.976C134.17 40.104 134.474 40.312 134.762 40.6C135.05 40.856 135.37 41.208 135.722 41.656L172.106 88.12C172.01 87 171.93 85.896 171.866 84.808C171.802 83.72 171.77 82.712 171.77 81.784V39.592H183.146Z" fill="#85AADC"/>
+            <path d="M247.083 50.2H226.155V109H213.243V50.2H192.315V39.592H247.083V50.2Z" fill="#92BAE2"/>
+            <path d="M304.646 50.2H283.718V109H270.806V50.2H249.878V39.592H304.646V50.2Z" fill="#A1CBEA"/>
+            <rect x="324.5" y="61.5" width="51" height="43" stroke="#B1D7F5" stroke-width="9"/>
+            <path d="M318.867 61.5L350 16.7545L381.133 61.5H318.867Z" stroke="#B1D7F5" stroke-width="10"/>
+        </svg>
+    </a>
+    <input type="text" placeholder="Enter a Neighborhood or Zipcode">
+    <a href="search.html"><input id="go" type="button" value="Search"></a>
+    <nav>
+        <ul class = "icons">
+        <li id="messages">
+            <a href="../views/message.html">
+                <svg width="45" height="45" viewBox="0 0 68 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.5" y="2.5" width="63" height="48" rx="12.5" stroke="#A4BADE" stroke-width="5"/>
+                    <line x1="2.5" y1="-2.5" x2="32.1592" y2="-2.5" transform="matrix(0.828021 0.560698 -0.360561 0.932736 6.80029 14.05)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
+                    <line x1="2.5" y1="-2.5" x2="32.6354" y2="-2.5" transform="matrix(-0.794575 0.607166 -0.399834 -0.916588 60.4448 8)" stroke="#A4BADE" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <div class="dropdown">
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Deonte!</a>
+                </div>
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Caresha!</a>
+                </div>
+                <div class="message-drop">
+                    <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+                    <a href="message.html">New Message from Latoya!</a>
+                </div>
+                <a id="seeall" href="message.html">See all messages</a>
+            </div>
+        </li>
+         <li id="notifs">
+            <a href="#">
+                <svg width="43" height="43" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_34_331)">
+                    <path d="M10.8942 39.3196H41.3974V24.1356C41.3974 15.6753 34.569 8.81646 26.1458 8.81646C17.7226 8.81646 10.8942 15.6753 10.8942 24.1356V39.3196ZM26.1458 4.45886C36.9744 4.45886 45.755 13.2677 45.755 24.1356V43.6772H6.53662V24.1356C6.53662 13.2677 15.3172 4.45886 26.1458 4.45886ZM20.6988 45.856H31.5928C31.5928 47.3006 31.0189 48.6861 29.9974 49.7076C28.9759 50.7291 27.5904 51.303 26.1458 51.303C24.7012 51.303 23.3157 50.7291 22.2942 49.7076C21.2727 48.6861 20.6988 47.3006 20.6988 45.856Z" fill="#A4BADE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_34_331">
+                    <rect width="52.2911" height="52.2911" fill="white" transform="translate(0 0.101257)"/>
+                    </clipPath>
+                    </defs>
+                 </svg> 
+            </a>
+            <div class="dropdown">
+                <a href="submitted_apps.html">Update on your application!</a>
+                <a href="saved.html">Update on an apartment you saved!</a>
+            </div>
+        </li>
+            <li><a href="../views/profile.html">
+                <img id="profile-img" src="../img/test.png" alt="A nice loveable yarn yoshi - a friend" width=50px height=50px>
+            </a></li>
+        </ul>
+    </nav>
 </header>
-<div class="container">
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/style2.css" />
-	<!-- <link rel="stylesheet" href="../css/style.css" /> -->
-	<!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
-	<img src="../img/user2.jpeg" alt="User photo" class="left" />
-	<p>How's the UI design project going?</p>
-	<span class="time-right">11:00</span>
-      </div>
-      
-      <div class="container darker">
-	<img src="../img/user.jpeg" alt="User photo" class="right" />
-	<!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
-	<p>It's going.</p>
-	<span class="time-left">11:01</span>
-      </div>
-      
-      <div class="container">
-	<!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
-	<img src="../img/user2.jpeg" alt="User photo" class="left" />
-	<p>Aren't you a rocker? Why are you coding?</p>
-	<span class="time-right">11:02</span>
-      </div>
-      
-      <div class="container darker">
-	<!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
-	<img src="../img/user.jpeg" alt="User photo" class="right" />
-	<p>Rock music went out of style so I am switching careers :( </p>
-	<span class="time-left">11:05</span>
+<div class = "subheader">
+    <ul class = "links">
+        <li>
+            <a href="../views/filters.html">My Filters</a>
+        </li>
+        <li>
+            <a href="../views/saved.html">Saved Apartments</a>
+        </li>
+        <li>
+            <a href="../views/submitted_apps.html">Applications</a>
+        </li>
+        <li>
+            <a href="../views/message.html">Messages</a>
+        </li>
+        <li>
+            <a href="../views/upload_confirm.html">Documents</a>
+        </li>
+        <li>
+            <a href="#">Support</a>
+        </li>
+        <li>
+            <a href="#">Settings</a>
+        </li>
+        <li>
+            <a id="logout" href="../views/landing.html">Log Out</a>
+        </li>
+    </ul>
+</div> 
+
+<div class="big_box">
+	<div class="conversation">
+		<h3>My Conversations</h3>
+		<div class="convo_list">
+			<!-- <h1><strong>My Documents</strong></h1> -->
+			<div class="convos">
+				<div class="a_convo2">
+					<p>Landlord Yoshi</p>
+					<div class="a_convo">
+						<img src = "../img/test.png" width="50px" height="50px">
+						<a href = "#">Good Morning. We've looked over your tax return and ...</a>
+					</div>
+				</div>
+				<div class="a_convo2">
+					<p>Tenant Yoshi</p>
+					<div class="a_convo">
+						<img src = "../img/landlord.jpg" width="50px" height="50px">
+						<a href = "#">Good Morning. We've looked over your tax return and ...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="chat">
+		<div class="flag">
+			<button id="block">Block</button>
+			<button id="report">Report</button>
+		</div>
+		<div class="container">
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style2.css" />
+			<!-- <link rel="stylesheet" href="../css/style.css" /> -->
+			<!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
+			<img src="../img/user2.jpeg" alt="User photo" class="left" />
+			<p>How's the UI design project going?</p>
+			<span class="time-right">11:00</span>
+			</div>
+			
+			<div class="container darker">
+			<img src="../img/user.jpeg" alt="User photo" class="right" />
+			<!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
+			<p>It's going.</p>
+			<span class="time-left">11:01</span>
+			</div>
+			
+			<div class="container">
+			<!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
+			<img src="../img/user2.jpeg" alt="User photo" class="left" />
+			<p>Aren't you a rocker? Why are you coding?</p>
+			<span class="time-right">11:02</span>
+			</div>
+			
+			<div class="container darker">
+			<!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
+			<img src="../img/user.jpeg" alt="User photo" class="right" />
+			<p>Rock music went out of style so I am switching careers :( </p>
+			<span class="time-left">11:05</span>
+		</div>
+		<div class="text_box">
+			<input type="text" id="chat_type" placeholder="Start typing...">
+		</div>
+	</div>
 </div>

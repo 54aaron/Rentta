@@ -1,10 +1,47 @@
 /* Chat containers */
+.flag{
+	display: flex;
+	float: right;
+	margin-bottom: 20px;
+	margin-left: -20px;
+}
+
+.flag button{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border-radius: 20px;
+	padding: 2px;
+}
+
+#report{
+	background-color: white;
+	border-color: #00286B;
+	color: #00286B;
+}
+
+#block:hover{
+	background-color: white;
+	border-color: #00286B;
+	color: #00286B;
+}
+
+#block{
+	color: white;
+	background-color: #00286B;
+}
+
+#report:hover{
+	color: white;
+	background-color: #00286B;
+}
+
 .container {
 	border: 2px solid #dedede;
 	background-color: #f1f1f1;
 	border-radius: 5px;
 	padding: 10px;
-	margin: 10px 0;
+	margin: 20px 20px;
+	margin-top: 30px;
 	font-family: 'Lato', sans-serif;
       }
       
@@ -54,3 +91,87 @@
 	color: #999;
 	font-family: 'Lato', sans-serif;
       }
+
+.big_box{
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+
+.big_box h3{
+	letter-spacing: 2px;
+}
+
+.convo_list{
+	/* border-style: solid; */
+	width: 400px;
+	margin-right: 40px;
+	/* height: 300px */
+}
+
+.a_convo2{
+	margin: 20px 10px;
+	border-style: solid;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.a_convo2:hover{
+	background: rgb(211, 226, 255);
+	cursor: pointer;
+}
+
+.a_convo2 p{
+	margin: 10px;
+	font-weight: bold;
+}
+
+.convos{
+	/* border-style: solid; */
+	border-radius: 20px;
+	/* margin: 20px 0px; */
+	padding: 10px 0px;
+}
+
+
+.a_convo:last-child{
+	border-style: none;
+}
+
+.a_convo{
+	padding: 10px 20px;
+	border-bottom: solid;
+	display: flex;
+	justify-content: space-between;
+}
+
+.a_convo img{
+	border-style: solid;
+	padding: 5px;
+	border-radius: 50px;
+}
+
+.a_convo a{
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+  margin: 0px 0px 0px 20px;
+}
+
+.a_convo a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.text_box{
+	padding: 20px;
+}
+#chat_type{
+	border-style: solid;
+	background: white;
+	border-color: #999;
+	border-radius: 5px;
+	border-width: 2px;
+	height: 50px;
+	width: 100%
+}
