@@ -1,0 +1,66 @@
+.web-container{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    color: #00286B;
+}
+.stuff{
+    margin: 50px;
+}
+
+.prompt_box{
+    /* background-color: #A4BADE; */
+    width: 400px;
+    height: 100x;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    padding: 40px 25px;
+    border-color: #00286B;
+}
+
+.prompt_box p{
+    margin-bottom: 10px;
+}
+
+.prompt_box input{
+    width: 80%;
+    background-color: white;
+    color: #00286B;
+    border-color: #00286B;
+}
+
+#confirm{
+    width: 50%;
+    margin-top: 10px;
+    background-color: #00286B;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#confirm:hover{
+    background-color:white;
+    color: #00286B;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back a{
+    text-decoration: none;
+    color:rgb(58, 139, 214);
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+.back a:hover{
+    text-decoration: underline;
+}

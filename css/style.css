@@ -11,7 +11,7 @@
   background-color: #0096FF;
   color: #fff;
 }
-
+/* 
 *:not(.filters),
 *::before,
 *::after {
@@ -22,10 +22,10 @@
 }
 
 html:not(.filters) {
-  /* font-size: 62.5%; */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
+
 
 body {
   line-height: 1.6;
